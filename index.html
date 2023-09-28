@@ -8,16 +8,12 @@
     <link rel="stylesheet" href="./assets/output.css">
 </head>
 
-<body class="p-20 bg-emerald-200">
+<body class=" bg-[#25d366]">
 
-    <section class="mt-3 max-w-sm mx-auto">
-        <div class=" mt-8 text-center font-black  px-2 py-2 mb-3  bg-green-500 rounded  max-w-sm mx-auto">
-            <a href="https://github.com/vedhatech002/whatsapp-ui-using-tailwind" target="_blank" class="">What's app ui
-                by - vedha
-                tech002</a>
-        </div>
+    <section class=" max-w-md mx-auto">
 
-        <div class="bg-emerald-800 text-white  flex px-5 py-4 align-middle justify-between ">
+
+        <div class="bg-[#075e54] text-white  flex px-5 py-4 align-middle justify-between ">
             <h4 class="font-semibold">Whatsapp</h4>
             <div class="flex text-white gap-6 items-start  ">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -33,27 +29,28 @@
                 </svg>
             </div>
         </div>
-        <div class="bg-emerald-800 px-5 pb-0">
+        <div class="bg-[#075e54] px-5 pb-0">
             <!-- tabs -->
-            <ul class="text-white flex gap-0 items-baseline justify-between pr-8" id="tabs">
-                <li>
-                    <a><svg class="mt-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <ul class="text-white flex gap-0 items-center justify-between pr-8" id="tabs">
+                <li class="pb-2">
+                    <a class=""><svg class="mt-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
                             <path fill="currentColor"
                                 d="M12 18q2.075 0 3.538-1.462Q17 15.075 17 13q0-2.075-1.462-3.538Q14.075 8 12 8Q9.925 8 8.463 9.462Q7 10.925 7 13q0 2.075 1.463 3.538Q9.925 18 12 18Zm0-2q-1.25 0-2.125-.875T9 13q0-1.25.875-2.125T12 10q1.25 0 2.125.875T15 13q0 1.25-.875 2.125T12 16Zm6-6q.425 0 .712-.288Q19 9.425 19 9t-.288-.713Q18.425 8 18 8t-.712.287Q17 8.575 17 9t.288.712Q17.575 10 18 10ZM4 21q-.825 0-1.412-.587Q2 19.825 2 19V7q0-.825.588-1.412Q3.175 5 4 5h3.15L8.7 3.325q.15-.15.337-.238Q9.225 3 9.425 3h5.15q.2 0 .388.087q.187.088.337.238L16.85 5H20q.825 0 1.413.588Q22 6.175 22 7v12q0 .825-.587 1.413Q20.825 21 20 21Z" />
                         </svg></a>
                 </li>
-                <li class=" border-b-4">
-                    <a class="uppercase text-sm flex items-center" href="#chats">chats <span
-                            class="bg-white text-emerald-800 rounded-full p-1 w-4 h-4 py-0 text-xs ms-1">6</span></a>
+                <li class="relative">
+                    <a class="capitalize text-sm flex items-center" href="#chats">chats <span
+                            class="bg-white text-emerald-800 rounded-full p-1 w-4 h-4 py-0 text-xs ms-1">4</span></a>
 
-                    <!-- <div class="bg-white w-full h-1 m absolute bottom-0 top-5 mt-0.5"></div> -->
+                    <div class="bg-white w-full h-1 m absolute bottom-0 top-6 mt-0.5"></div>
 
                 </li>
                 <li class="">
-                    <a class="uppercase text-sm" href="#status">Status</a>
+                    <a class="capitalize text-sm" href="#status">Status</a>
                 </li>
                 <li class="">
-                    <a class="uppercase text-sm" href="#calls">Calls</a>
+                    <a class="captalize text-sm" href="#calls">Calls</a>
                 </li>
 
             </ul>
@@ -61,50 +58,162 @@
         <!-- tab contents -->
         <div id="tab-contents">
             <!-- chatscreen -->
+
+            <!-- jackie pandiyan -->
             <div class=" bg-white" id="chats">
-                <div class="flex items-center gap-4  px-4  py-3 cursor-pointer   hover:bg-gray-200">
-                    <img class="rounded-full bg-blue-400"
-                        src="https://ui-avatars.com/api/?name=Ajith+Kumar&background=0D8ABC&color=fff" alt="">
-                    <div class="flex   justify-between items-baseline gap-20 ">
-                        <div class="">
-                            <h5 class="font-semibold">Ajith Kumar</h5>
-                            <p class="text-sm text-emerald-800">Hi boy let we go for ride</p>
+                <div
+                    class="flex  items-center gap-x-4  px-4  py-3 cursor-pointer justify-start flex-1 hover:bg-gray-200 ">
+                    <img class="rounded-full w-16 h-16" src="./assets/img/sjsurya.png" alt="jackie">
+
+                    <div class="flex-1">
+                        <h5 class="font-semibold text-black">Jackie Pandiyan</h5>
+                        <p class="text-sm text-[#128c7e]">Silukkaa 😱</p>
+                    </div>
+                    <div class="flex flex-col items-end gap-y-1 text-[#25d366] text-sm">
+                        <span>1:00 pm</span>
+                        <span class="rounded-full bg-[#25d366] text-white w-4 h-4 text-xs pl-1 ">3</span>
+                    </div>
+                </div>
+                <!-- silukku -->
+
+                <div
+                    class="flex  items-center gap-x-4  px-4  py-3 cursor-pointer justify-start flex-1 hover:bg-gray-200 ">
+                    <img class="rounded-full w-16 h-16 ring-2 ring-[#25d366] ring-offset-2"
+                        src="./assets/img/silukusmitha.jpg" alt="silukku">
+
+                    <div class="flex-1">
+                        <h5 class="font-semibold text-black">Silukku 🤤</h5>
+                        <p class="text-sm text-[#128c7e]">Meesa sir</p>
+                    </div>
+                    <div class="flex flex-col items-end gap-y-1 text-[#25d366] text-sm">
+                        <span>12:50 pm</span>
+                        <span class="rounded-full bg-[#25d366] text-white w-4 h-4 text-xs pl-1 ">2</span>
+                    </div>
+                </div>
+                <!-- antony -->
+                <div
+                    class="flex  items-center gap-x-4  px-4  py-3 cursor-pointer justify-start flex-1 hover:bg-gray-200 ">
+                    <img class="rounded-full w-16 h-16 ring-2 ring-[#25d366] ring-offset-2"
+                        src="./assets/img/antony.jpg" alt="antony">
+
+                    <div class="flex-1">
+                        <h5 class="font-semibold text-black">Antony</h5>
+                        <p class="text-sm text-[#128c7e]">meet my Anaconda🤩</p>
+                    </div>
+                    <div class="flex flex-col items-end gap-y-1 text-[#25d366] text-sm">
+                        <span>12:45 pm</span>
+                        <span class="rounded-full bg-[#25d366] text-white w-4 h-4 text-xs pl-1 ">1</span>
+                    </div>
+                </div>
+                <!-- kinsley -->
+                <div
+                    class="flex  items-center gap-x-4  px-4  py-3 cursor-pointer justify-start flex-1 hover:bg-gray-200 ">
+                    <img class="rounded-full w-16 h-16 ring-2 ring-[#25d366] ring-offset-2"
+                        src="./assets/img/kinsley.png" alt="kinsley">
+
+                    <div class="flex-1">
+                        <h5 class="font-semibold text-black">Kinsley</h5>
+                        <p class="text-sm text-[#128c7e]">mmmhhhh 😄</p>
+                    </div>
+                    <div class="flex flex-col items-end gap-y-1 text-[#25d366] text-sm">
+                        <span>12:40 pm</span>
+                        <span class="rounded-full bg-[#25d366] text-white w-4 h-4 text-xs pl-1 ">1</span>
+                    </div>
+                </div>
+                <!-- amala shaji -->
+                <div
+                    class="flex items-center  gap-x-4  px-4  py-3 cursor-pointer justify-start flex-1 hover:bg-gray-200 ">
+                    <img class="rounded-full w-16 h-16 ring-2 ring-[#25d366] ring-offset-2"
+                        src="./assets/img/amala.jpeg" alt="amala">
+                    <div class="flex-1 flex items-star justify-betweent">
+                        <div class="flex-1">
+                            <h5 class="font-semibold text-black">Amala Shaji</h5>
+                            <p class="text-sm text-[#128c7e] flex items-center">
+                                <span><svg class="text-blue-400" xmlns="http://www.w3.org/2000/svg" width="18"
+                                        height="18" viewBox="0 0 24 24">
+                                        <path fill="#03a9f4"
+                                            d="m18 7l-1.41-1.41l-6.34 6.34l1.41 1.41L18 7zm4.24-1.41L11.66 16.17L7.48 12l-1.41 1.41L11.66 19l12-12l-1.42-1.41zM.41 13.41L6 19l1.41-1.41L1.83 12L.41 13.41z" />
+                                    </svg></span>
+                                &nbsp; azhuga onnum venam ok ❤️
+                            </p>
                         </div>
-                        <div class="flex flex-col items-center text-green-500">
-                            <span>9:00</span>
-                            <span class="rounded-full bg-green-500 text-white w-4 h-4 text-xs px-1">2</span>
+                        <div class="flex flex-col items-end gap-y-1 text-[#128c7e] text-sm">
+                            <span>11:00 Am</span>
+                            <!-- <span class="rounded-full bg-[#25d366] text-white w-4 h-4 text-xs pl-1 ">1</span> -->
                         </div>
                     </div>
                 </div>
-                <div class="flex items-center gap-4  px-4  py-3 cursor-pointer   hover:bg-gray-200">
-                    <img class="rounded-full bg-blue-400"
-                        src="https://ui-avatars.com/api/?name=Kamal+Hasan&background=133955&color=fff" alt="">
-                    <div class="flex justify-between items-baseline gap-20">
-                        <div class="">
-                            <h5 class="font-semibold">Kamal Hasan</h5>
-                            <p class="text-sm text-emerald-800">let's plan for next 200yrs</p>
+                <!-- gp muthu -->
+                <div
+                    class="flex items-center  gap-x-4  px-4  py-3 cursor-pointer justify-start flex-1 hover:bg-gray-200 ">
+                    <img class="rounded-full w-16 h-16 ring-2 ring-[#25d366] ring-offset-2"
+                        src="./assets/img/gp muthu.jpg" alt="Gpmuthu">
+                    <div class="flex-1 flex items-star justify-betweent">
+                        <div class="flex-1">
+                            <h5 class="font-semibold text-black">Jaman Star</h5>
+                            <p class="text-sm text-[#128c7e] flex items-center">
+                                yenla epti pandringa sethapayluvola🤬
+                            </p>
                         </div>
-                        <div class="flex flex-col items-center text-green-500">
-                            <span>8:45</span>
-                            <span class="rounded-full bg-green-500 text-white w-4 h-4 text-xs px-1">1</span>
+                        <div class="flex flex-col items-end gap-y-1 text-[#128c7e] text-sm">
+                            <span>10:59 Am</span>
+                            <!-- <span class="rounded-full bg-[#25d366] text-white w-4 h-4 text-xs pl-1 ">1</span> -->
                         </div>
                     </div>
                 </div>
-                <div class="flex items-center  px-4 gap-4 py-3 cursor-pointer   hover:bg-gray-200 ">
-                    <img class="rounded-full bg-blue-400"
-                        src="https://ui-avatars.com/api/?name=Trisha+Krishnan&background=0D8ABC&color=fff" alt="">
-                    <div class="flex justify-between items-baseline gap-20">
-                        <div class="">
-                            <h5 class="font-semibold">Trisha Krishnan</h5>
-                            <p class="text-sm text-emerald-800">Hi darling, how are you?</p>
+                <!-- my-3 -->
+                <div
+                    class="flex items-center  gap-x-4  px-4  py-3 cursor-pointer justify-start flex-1 hover:bg-gray-200 ">
+                    <img class="rounded-full w-16 h-16 " src="./assets/img/my3.png" alt="Gpmuthu">
+                    <div class="flex-1 flex items-star justify-betweent">
+                        <div class="flex-1">
+                            <h5 class="font-semibold text-black">MY3</h5>
+                            <p class="text-sm text-[#128c7e] flex items-center">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                        <path fill="#888888"
+                                            d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z" />
+                                    </svg>
+                                </span>
+                                &nbsp;Photo
+                            </p>
                         </div>
-                        <div class="flex flex-col items-center text-green-500">
-                            <span>9:00</span>
-                            <span class="rounded-full bg-green-500 text-white w-4 h-4 text-xs px-1">2</span>
+                        <div class="flex flex-col items-end gap-y-1 text-[#128c7e] text-sm">
+                            <span>Yestarday</span>
+                            <!-- <span class="rounded-full bg-[#25d366] text-white w-4 h-4 text-xs pl-1 ">1</span> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- vikram -->
+                <div
+                    class="flex items-center  gap-x-4  px-4  py-3 cursor-pointer justify-start flex-1 hover:bg-gray-200 ">
+                    <img class="rounded-full w-16 h-16 ring-[#25d366] ring-offset-2" src="./assets/img/kamal.webp"
+                        alt="vikram">
+                    <div class="flex-1 flex items-star justify-betweent">
+                        <div class="flex-1">
+                            <h5 class="font-semibold text-black">Agent Vikram</h5>
+                            <p class="text-sm text-[#128c7e] flex items-center">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                        <path fill="#03a9f4"
+                                            d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z" />
+                                        <path fill="#03a9f4"
+                                            d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z" />
+                                    </svg>
+                                </span>
+                                0:30
+                            </p>
+                        </div>
+                        <div class="flex flex-col items-end gap-y-1 text-[#128c7e] text-sm">
+                            <span>26/09/2023</span>
+                            <!-- <span class="rounded-full bg-[#25d366] text-white w-4 h-4 text-xs pl-1 ">1</span> -->
                         </div>
                     </div>
                 </div>
             </div>
+
+
+
             <div class="hidden  bg-white" id="status">
                 <!-- my status -->
                 <div class="flex items-center gap-x-4  px-4  py-3 cursor-pointer justify-start flex-1   ">
@@ -168,7 +277,7 @@
 
     </section>
     <!-- tab system js file -->
-    <script src="./assets/js/app.js"></script>
+    <!-- <script src="./assets/js/app.js"></script> -->
 </body>
 
 </html>
