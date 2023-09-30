@@ -1,4 +1,23 @@
+// profile menu toggle
+const dotButton = document.getElementById("three-dot");
+console.log(dotButton);
+let dropDown = document.getElementById("dropdown-menu");
+console.log(dropDown)
 
+dotButton.addEventListener("click", () => {
+    let dropdownClassList = dropDown.classList;
+    let containInvisible = dropdownClassList.contains("invisible")
+    if (containInvisible === true) {
+        dropDown.classList.remove("invisible");
+    }
+    else {
+        dropDown.classList.add("invisible");
+    }
+
+});
+
+
+// tab system
 let tabsContainer = document.querySelector("#tabs");
 
 let tabTogglers = tabsContainer.querySelectorAll("#tabs a");

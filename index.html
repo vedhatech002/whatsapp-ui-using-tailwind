@@ -12,7 +12,7 @@
 
     <section class=" max-w-md mx-auto">
         <!-- header -->
-        <div class="bg-[#075e54] text-white  flex px-5 py-5 align-middle justify-between ">
+        <div class="bg-[#075e54] text-white  flex px-5 py-5 align-middle justify-between relative ">
             <h4 class="font-semibold">Whatsapp</h4>
             <div class="flex text-white gap-6 items-start  ">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -25,17 +25,23 @@
                     <path fill="currentColor"
                         d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5q0-2.725 1.888-4.612T9.5 3q2.725 0 4.612 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3l-1.4 1.4ZM9.5 14q1.875 0 3.188-1.313T14 9.5q0-1.875-1.313-3.188T9.5 5Q7.625 5 6.312 6.313T5 9.5q0 1.875 1.313 3.188T9.5 14Z" />
                 </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                    class="cursor-pointer relative">
-                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0-2 0m0 7a1 1 0 1 0 2 0a1 1 0 1 0-2 0m0-14a1 1 0 1 0 2 0a1 1 0 1 0-2 0" />
-                </svg>
-                <div class="bg-white text-black shadow  w-36 rounded  absolute top-12 right-1 z-50">
-                    <ul class="px-4 py-2 text-[#075e54]">
-                        <li class="py-2">
+                <div id="three-dot">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="cursor-pointer ">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0-2 0m0 7a1 1 0 1 0 2 0a1 1 0 1 0-2 0m0-14a1 1 0 1 0 2 0a1 1 0 1 0-2 0" />
+                    </svg>
+                </div>
+                <!-- profile menu -->
+                <div id="dropdown-menu"
+                    class="bg-white text-black shadow  w-36 rounded  absolute top-12 right-1 z-50 invisible">
+                    <ul class="py-2 text-[#075e54] flex flex-col ">
+                        <!-- github source -->
+                        <li class="px-4 py-1 hover:bg-slate-200">
 
-                            <a href="#" class="flex gap-x-2 items-center">
+                            <a href="https://github.com/vedhatech002/whatsapp-ui-using-tailwind" target="_blank"
+                                class="flex gap-x-2 items-center">
                                 <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24">
                                         <path fill="#888888"
@@ -43,9 +49,11 @@
                                     </svg></span>
                                 GitHub</a>
                         </li>
-                        <li>
+                        <!-- linked in profile -->
+                        <li class="px-4 py-1 hover:bg-slate-200">
 
-                            <a href="#" class="flex gap-x-2 items-center">
+                            <a href="https://www.linkedin.com/in/vijayavedhasekaran002/" target="_blank"
+                                class="flex gap-x-2 items-center">
                                 <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24">
                                         <path fill="#888888"
@@ -53,6 +61,20 @@
                                     </svg></span>
                                 LinkedIn</a>
                         </li>
+                        <!-- instagram profile -->
+                        <li class="px-4 py-1 hover:bg-slate-200">
+
+                            <a href="https://www.instagram.com/vedha_since_2002/" target="_blank"
+                                class="flex gap-x-2 items-center ">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                        viewBox="0 0 24 24">
+                                        <path fill="#888888"
+                                            d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z" />
+                                    </svg></span>
+                                Instagram</a>
+                        </li>
+
+
 
                     </ul>
                 </div>
