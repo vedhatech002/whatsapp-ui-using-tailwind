@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whatsapp</title>
     <link rel="stylesheet" href="./assets/output.css">
+    <style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
 </head>
 
-<body class=" bg-[#25d366]">
+<body class=" bg-[#25d366] overflow-y-hidden">
 
     <section class=" max-w-md mx-auto">
         <!-- header -->
@@ -111,11 +116,11 @@
             </ul>
         </div>
         <!-- tab contents -->
-        <div id="tab-contents">
+        <div id="tab-contents" class="">
             <!-- chatscreen -->
 
 
-            <div class=" bg-white " id="chats">
+            <div class=" bg-white overscroll-auto overflow-y-auto w-auto h-[450px] no-scrollbar " id="chats">
                 <!-- jackie pandiyan -->
                 <div
                     class="flex  items-center gap-x-4  px-4  py-3 cursor-pointer justify-start flex-1 hover:bg-gray-200 ">
@@ -270,7 +275,7 @@
 
 
             <!-- status section -->
-            <div class="hidden  bg-white" id="status">
+            <div class="hidden  bg-white overscroll-auto overflow-y-auto w-auto h-[650px] no-scrollbar" id="status">
                 <!-- my status -->
                 <div class="flex items-center gap-x-4  px-4  py-3 cursor-pointer justify-start flex-1   ">
                     <img class="rounded-full w-16 h-16 border-2 ring-2 ring-offset-1 ring-[#128c7e]"
@@ -360,6 +365,8 @@
 
                     </div>
                 </div>
+                <!-- channels -->
+                <h1>channels</h1>
             </div>
             <!-- calls tab -->
             <div class="hidden bg-white" id="calls">
