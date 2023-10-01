@@ -120,7 +120,7 @@
             <!-- chatscreen -->
 
 
-            <div class=" bg-white overscroll-auto overflow-y-auto w-auto h-[450px] no-scrollbar " id="chats">
+            <div class="hidden bg-white overscroll-auto overflow-y-auto w-auto h-[560px] no-scrollbar " id="chats">
                 <!-- jackie pandiyan -->
                 <div
                     class="flex  items-center gap-x-4  px-4  py-3 cursor-pointer justify-start flex-1 hover:bg-gray-200 ">
@@ -275,7 +275,7 @@
 
 
             <!-- status section -->
-            <div class="hidden  bg-white overscroll-auto overflow-y-auto w-auto h-[650px] no-scrollbar" id="status">
+            <div class="  bg-white overscroll-auto overflow-y-auto w-auto h-[560px] no-scrollbar " id="status">
                 <!-- my status -->
                 <div class="flex items-center gap-x-4  px-4  py-3 cursor-pointer justify-start flex-1   ">
                     <img class="rounded-full w-16 h-16 border-2 ring-2 ring-offset-1 ring-[#128c7e]"
@@ -366,8 +366,86 @@
                     </div>
                 </div>
                 <!-- channels -->
-                <h1>channels</h1>
+                <div class="channels-section border-t">
+                    <div class="channels-title-div px-4 pt-4">
+                        <div class="flex justify-between items-center">
+                            <h4 class="font-semibold">Channels</h4>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                    <path fill="#888888" d="M19 12.998h-6v6h-2v-6H5v-2h6v-6h2v6h6z" />
+                                </svg>
+                            </span>
+                        </div>
+                        <p class="text-sm text-[#128c7e] mt-2">Stay Updated on topics that matters to you. Find channel
+                            to
+                            follow below.</p>
+                    </div>
+
+                    <!-- channels profile card -->
+                    <div class="channels-profilecard-div py-4 flex gap-x-3 overflow-x-auto px-4 no-scrollbar">
+                        <!-- mark mama -->
+                        <div class="p-4 border border-bg-[#128c7e] rounded-lg w-32 py-2 flex flex-col items-center">
+                            <img class="w-16 h-16 rounded-full"
+                                src="https://upload.wikimedia.org/wikipedia/commons/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg"
+                                alt="mark mama">
+                            <p class="text-xs font-semibold">Mark Mams</p>
+                            <button
+                                class="text-xs text-[#128c7e] font-semibold rounded-full bg-slate-200 mt-1 px-5 py-1 hover:bg-[#128c7e] hover:text-white">Follow</button>
+
+                        </div>
+
+                        <!-- musk mama -->
+                        <div class="p-4 border border-bg-[#128c7e] rounded-lg w-32 py-2 flex flex-col items-center">
+                            <img class="w-16 h-16 rounded-full"
+                                src="https://upload.wikimedia.org/wikipedia/commons/9/99/Elon_Musk_Colorado_2022_%28cropped2%29.jpg"
+                                alt="mark mama">
+                            <p class="text-xs font-semibold">Musk Mams</p>
+                            <button
+                                class="text-xs text-[#128c7e] font-semibold rounded-full bg-slate-200 mt-1 px-5 py-1 hover:bg-[#128c7e] hover:text-white">Follow</button>
+
+                        </div>
+                        <!-- jeff -->
+                        <div class="p-4 border border-bg-[#128c7e] rounded-lg w-32 py-2 flex flex-col items-center">
+                            <img class="w-16 h-16 rounded-full"
+                                src="https://assets.wired.com/photos/w_2064/wp-content/uploads/2019/01/Culture_GeeksGuide_Bezos.jpg"
+                                alt="mark mama">
+                            <p class="text-xs font-semibold">Jeff Bezos</p>
+                            <button
+                                class="text-xs text-[#128c7e] font-semibold rounded-full bg-slate-200 mt-1 px-5 py-1 hover:bg-[#128c7e] hover:text-white">Follow</button>
+
+                        </div>
+                        <!-- modi ji -->
+                        <div class="p-4 border border-bg-[#128c7e] rounded-lg w-32 py-2 flex flex-col items-center">
+                            <img class="w-16 h-16 rounded-full"
+                                src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Official_Photograph_of_Prime_Minister_Narendra_Modi_Portrait.png"
+                                alt="mark mama">
+                            <p class="text-xs font-semibold">Modi Ji</p>
+                            <button
+                                class="text-xs text-[#128c7e] font-semibold rounded-full bg-slate-200 mt-1 px-5 py-1 hover:bg-[#128c7e] hover:text-white">Follow</button>
+
+                        </div>
+                        <!-- ritesh agarwal -->
+                        <div class="p-4 border border-bg-[#128c7e] rounded-lg w-32 py-2 flex flex-col items-center">
+                            <img class="w-16 h-16 rounded-full"
+                                src="https://m.economictimes.com/thumb/msid-88839801,width-1200,height-900,resizemode-4,imgsize-93158/ritesh-agarwal.jpg"
+                                alt="mark mama">
+                            <p class="text-xs font-semibold">Ritesh</p>
+                            <button
+                                class="text-xs text-[#128c7e] font-semibold rounded-full bg-slate-200 mt-1 px-5 py-1 hover:bg-[#128c7e] hover:text-white">Follow</button>
+
+                        </div>
+
+                    </div>
+
+                    <button class="bg-[#128c7e] text-white text-sm rounded-full px-4 py-1.5 mx-4 mt-2 mb-8">Find
+                        channels</button>
+                </div>
             </div>
+
+
+
+
+
             <!-- calls tab -->
             <div class="hidden bg-white" id="calls">
                 <!-- create a call link -->
