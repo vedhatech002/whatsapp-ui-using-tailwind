@@ -1,8 +1,8 @@
 // profile menu toggle
 const dotButton = document.getElementById("three-dot");
-console.log(dotButton);
+
 let dropDown = document.getElementById("dropdown-menu");
-console.log(dropDown)
+
 
 dotButton.addEventListener("click", () => {
     let dropdownClassList = dropDown.classList;
@@ -50,4 +50,24 @@ tabTogglers.forEach(function (toggler) {
 
         e.target.nextElementSibling.classList.add("bg-white", "w-full", "h-1", "absolute", "bottom-0", "top-6");
     });
+});
+
+//viewd updates toggle
+
+const viewedUpdateTogglebtn = document.getElementById("viewed-updates-toggle-btn");
+const viewedUpdates = document.getElementById("viewed-updates");
+
+viewedUpdateTogglebtn.addEventListener("click", () => {
+    let containsHidden = viewedUpdates.classList.contains("hidden");
+
+    if (containsHidden === true) {
+        viewedUpdates.classList.remove("hidden");
+        viewedUpdateTogglebtn.innerText = "expand_less";
+    }
+    else {
+        viewedUpdateTogglebtn.innerText = "expand_more";
+        viewedUpdates.classList.add("hidden");
+    }
+
+
 });
